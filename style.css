@@ -125,23 +125,39 @@ nav a:hover{ color: var(--accent); }
 /* ----- ACTIVITIES, LISTS ----- */
 .activity-list{ margin:8px 0 0 18px; padding:0; font-size:13.5px; }
 
-/* ----- FAMILY PHOTOS ----- */
-.family-photos{
-  display:flex;
-  gap:10px;
-  justify-content:space-between;
-  align-items:center;
-}
-.family-photos img{
-  width:32%;
-  height:170px;
-  object-fit:cover;
-  border-radius:10px;
-  border:3px solid var(--accent);
+/* FAMILY PAGE FIXES */
+.family-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0 40px;
 }
 
-/* smaller at compact */
-.compact .family-photos img{ height:140px; }
+.family-card {
+    width: 30%;
+    text-align: center;
+}
+
+.family-card img {
+    width: 95%;
+    height: 260px;      /* Increased size */
+    object-fit: cover;  /* Shows more of the picture without scrolling */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.family-card h3 {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.family-card p {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
 
 /* ----- BUTTONS ----- */
 .btn{
