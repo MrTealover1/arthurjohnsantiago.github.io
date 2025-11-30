@@ -274,3 +274,91 @@ body.family-page {
   }
 }
 
+/* GENERAL PAGE STYLE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+/* MAIN CONTENT BOX */
+.content-box {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.batch-photo {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* NAMES SECTION */
+.names-box {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.names-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.names-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.names-grid p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .names-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
