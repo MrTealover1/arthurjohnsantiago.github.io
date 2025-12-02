@@ -214,7 +214,7 @@ main{
 }
 .family-box img{
   width:100%;
-  height:200px;
+  height:160px;
   object-fit:cover;
   border-radius:10px;
 }
@@ -297,3 +297,4 @@ footer{
 
 /* utility */
 .force-compact{ font-size:13px; }
+
