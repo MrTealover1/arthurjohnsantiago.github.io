@@ -156,11 +156,11 @@ main{
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* Batchmates names grid - 6 columns, 6 names per column, more spacing */
+/* Batchmates names grid - 6 columns, more spacing */
 .names-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 3px 15px; /* increased horizontal gap from 6px to 15px */
+  gap: 4px 25px; /* row gap slightly bigger, column gap much wider */
   margin-top: 10px;
   font-size: 8px;
   align-items: start;
@@ -168,23 +168,23 @@ main{
 
 /* Adjust for medium screens */
 @media (max-width:1500px) {
-  .names-grid { grid-template-columns: repeat(5, 1fr); font-size:10px; gap:3px 12px; }
+  .names-grid { grid-template-columns: repeat(5, 1fr); font-size:10px; gap:4px 20px; }
 }
 
 @media (max-width:1200px) {
-  .names-grid { grid-template-columns: repeat(4, 1fr); font-size:11px; gap:3px 10px; }
+  .names-grid { grid-template-columns: repeat(4, 1fr); font-size:11px; gap:4px 15px; }
 }
 
 @media (max-width:900px) {
-  .names-grid { grid-template-columns: repeat(3, 1fr); font-size:12px; gap:3px 8px; }
+  .names-grid { grid-template-columns: repeat(3, 1fr); font-size:12px; gap:4px 12px; }
 }
 
 @media (max-width:600px){
-  .names-grid { grid-template-columns: repeat(2, 1fr); font-size:13px; gap:3px 6px; }
+  .names-grid { grid-template-columns: repeat(2, 1fr); font-size:13px; gap:4px 10px; }
 }
 
 @media (max-width:400px){
-  .names-grid { grid-template-columns: repeat(1, 1fr); font-size:14px; gap:3px 0; }
+  .names-grid { grid-template-columns: repeat(1, 1fr); font-size:14px; gap:4px 0; }
 }
 
 
