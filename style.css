@@ -156,36 +156,41 @@ main{
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* Batchmates names grid - 6 columns, more spacing */
+/* Batchmates names grid - 9 columns, compact layout */
 .names-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 4px 25px; /* row gap slightly bigger, column gap much wider */
+  grid-template-columns: repeat(9, 1fr);
+  gap: 3px 20px; /* vertical and horizontal gaps */
   margin-top: 10px;
-  font-size: 8px;
+  font-size: 8px; /* slightly smaller to fit in more rows */
   align-items: start;
 }
 
-/* Adjust for medium screens */
+/* Adjust for medium-large screens */
+@media (max-width:1800px) {
+  .names-grid { grid-template-columns: repeat(8, 1fr); font-size:8px; gap:3px 18px; }
+}
+
 @media (max-width:1500px) {
-  .names-grid { grid-template-columns: repeat(5, 1fr); font-size:10px; gap:4px 20px; }
+  .names-grid { grid-template-columns: repeat(7, 1fr); font-size:9px; gap:3px 16px; }
 }
 
 @media (max-width:1200px) {
-  .names-grid { grid-template-columns: repeat(4, 1fr); font-size:11px; gap:4px 15px; }
+  .names-grid { grid-template-columns: repeat(6, 1fr); font-size:9px; gap:3px 14px; }
 }
 
 @media (max-width:900px) {
-  .names-grid { grid-template-columns: repeat(3, 1fr); font-size:12px; gap:4px 12px; }
+  .names-grid { grid-template-columns: repeat(4, 1fr); font-size:10px; gap:3px 12px; }
 }
 
 @media (max-width:600px){
-  .names-grid { grid-template-columns: repeat(2, 1fr); font-size:13px; gap:4px 10px; }
+  .names-grid { grid-template-columns: repeat(2, 1fr); font-size:12px; gap:3px 10px; }
 }
 
 @media (max-width:400px){
-  .names-grid { grid-template-columns: repeat(1, 1fr); font-size:14px; gap:4px 0; }
+  .names-grid { grid-template-columns: repeat(1, 1fr); font-size:13px; gap:3px 0; }
 }
+
 
 
 /* Family & Friends box adjustments (all boxes identical style) */
